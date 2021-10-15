@@ -1,0 +1,23 @@
+0 silly argv {
+0 silly argv   _: [ 'exec' ],
+0 silly argv   scope: 'server',
+0 silly argv   args: [],
+0 silly argv   '--': [ 'npm', 'dev' ],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'lerna'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /home/yuliia/MyProjects/15.10.21/2/fullstack-project-pe2021-1
+3 error JSONError: Unexpected token "/" (0x2F) in JSON at position 441 while parsing near "...h\": \"^4.17.21\",\n    // \"multer\": \"^1.4.3..." in packages/server/package.json
+3 error
+3 error [0m [90m 17 |[39m     [32m"http-errors"[39m[33m:[39m [32m"^1.8.0"[39m[33m,[39m[0m
+3 error [0m [90m 18 |[39m     [32m"lodash"[39m[33m:[39m [32m"^4.17.21"[39m[33m,[39m[0m
+3 error [0m[31m[1m>[22m[39m[90m 19 |[39m     [90m// "multer": "^1.4.3",[39m[0m
+3 error [0m [90m    |[39m     [31m[1m^[22m[39m[0m
+3 error [0m [90m 20 |[39m     [32m"pg"[39m[33m:[39m [32m"^8.7.1"[39m[33m,[39m[0m
+3 error [0m [90m 21 |[39m     [32m"pg-hstore"[39m[33m:[39m [32m"^2.3.4"[39m[33m,[39m[0m
+3 error [0m [90m 22 |[39m     [32m"sequelize"[39m[33m:[39m [32m"^6.6.5"[39m[33m,[39m[0m
+3 error
+3 error     at parseJson (/home/yuliia/.nvm/versions/node/v14.18.0/lib/node_modules/lerna/node_modules/parse-json/index.js:29:21)
+3 error     at parse (/home/yuliia/.nvm/versions/node/v14.18.0/lib/node_modules/lerna/node_modules/load-json-file/index.js:15:9)
+3 error     at module.exports (/home/yuliia/.nvm/versions/node/v14.18.0/lib/node_modules/lerna/node_modules/load-json-file/index.js:18:47)
