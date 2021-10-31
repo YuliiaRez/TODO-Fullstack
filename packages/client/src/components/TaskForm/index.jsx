@@ -1,4 +1,5 @@
 import React from "react";
+import "../task.css";
 import { Formik, Form, Field } from "formik";
 import { connect } from "react-redux";
 import { createTaskAction } from "../../actions";
@@ -15,17 +16,19 @@ function TaskForm(props) {
   };
 
   return (
-    <Formik initialValues={initialTaskValues} onSubmit={submitHandler}>
-      {(formikProps) => {
-        return (
-          <Form>
-            <Field name="toDoTask" />
-            <br />
-            <button type="submit">Add</button>
-          </Form>
-        );
-      }}
-    </Formik>
+    <div className="task">
+      <Formik initialValues={initialTaskValues} onSubmit={submitHandler}>
+        {(formikProps) => {
+          return (
+            <Form>
+              <Field name="toDoTask" />
+              <br />
+              <button type="submit">Add</button>
+            </Form>
+          );
+        }}
+      </Formik>
+    </div>
   );
 }
 

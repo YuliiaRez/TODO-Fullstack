@@ -1,3 +1,4 @@
+import "../task.css";
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import * as actionCreators from "../../actions";
@@ -16,7 +17,7 @@ function TasksList(props) {
 
     return (
       <li key={id}>
-        toDoTask: {toDoTask}
+        Task : {toDoTask}
         <button onClick={deleteHandler}>Delete</button>
       </li>
     );
